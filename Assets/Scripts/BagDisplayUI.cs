@@ -45,7 +45,7 @@ public class BagDisplayUI : MonoBehaviour
     {
         for (int i = 0; i < bagDisplayUI.myBag.transform.childCount; i++)
         {
-            Destroy(bagDisplayUI.myBag.transform.GetChild(i));
+            Destroy(bagDisplayUI.myBag.transform.GetChild(i).gameObject);
         }
         for (int i = 0; i < bagDisplayUI.mainItem.itemList.Count; i++)
         {
